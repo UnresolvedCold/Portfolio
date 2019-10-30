@@ -1,0 +1,31 @@
+@import url('https://fonts.googleapis.com/css?family=Playfair+Display:400,400italic,700');
+@import url('https://fonts.googleapis.com/css?family=Varela&display=swap');
+body {
+  /*background: #edf2f4;*/
+  /*background: #e8f1f6;*/
+  background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("../img/background.jpg");
+
+    -webkit-perspective: 1000px;
+          perspective: 1000px;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+ 
+  height: 100vh;
+  font-family: 'Varela', sans-serif,"Playfair Display",georgia,serif;
+
+}
+
+.MainContent,
+img,
+p,
+h1,
+H1,
+div,
+span,
+card,
+a,
+a:hover {
+    cursor: none;
+}
+
+

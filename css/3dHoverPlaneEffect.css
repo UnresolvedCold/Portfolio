@@ -1,0 +1,83 @@
+.flex
+{
+  display: flex;
+}
+
+.__card {
+  /*pointer-events: none;*/
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0);
+  padding: 30px;
+  background: rgb(250, 250, 250);
+  border-radius: 5px;
+  width: 400px;
+  height: 200px;
+  margin: auto;
+  margin-top: 50px;
+
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  display: flex;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.__card:after {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 10px;
+  border-radius: 50%;
+  left: 0;
+  bottom: -50px;
+  box-shadow: 0 30px 20px rgba(0, 0, 0, 0.3);
+}
+.__card .__card-content {
+  margin: auto;
+  text-align: center;
+  -webkit-transform-style: preserve-3d;
+          transform-style: preserve-3d;
+}
+.__card h1 {
+  -webkit-transform: translateZ(100px);
+          transform: translateZ(100px);
+}
+.__card p {
+  -webkit-transform: translateZ(50px);
+          transform: translateZ(50px);
+  display: block;
+}
+.__card p.related {
+  -webkit-transform: translateZ(80px);
+          transform: translateZ(80px);
+  font-style: italic;
+}
+.__card a {
+  color: #69c6b8;
+  pointer-events: auto;
+}
+
+.iklan {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  background: white;
+  width: 200px;
+  padding: 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+.iklan p {
+  margin: 0 0 15px;
+  line-height: 1.4;
+}
+.iklan a {
+  background-color: #ff4757;
+  color: white;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 3px;
+  text-decoration: none;
+  font-size: 14px;
+}
