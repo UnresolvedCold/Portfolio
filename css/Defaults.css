@@ -3,8 +3,11 @@
 body {
   /*background: #edf2f4;*/
   /*background: #e8f1f6;*/
-  background: linear-gradient(rgba(255,255,255,.8), rgba(255,255,255,.8)), url("../img/background.jpg");
-
+  /*background: linear-gradient(rgba(212, 212, 212, 0.5), rgba(212, 212, 212, 0.5)), url("../img/background.jpg");
+  */
+  background: white;
+  background-size: cover;
+  
     -webkit-perspective: 1000px;
           perspective: 1000px;
   -webkit-transform-style: preserve-3d;
@@ -15,17 +18,29 @@ body {
 
 }
 
-.MainContent,
-img,
-p,
-h1,
-H1,
-div,
-span,
-card,
-a,
-a:hover {
-    cursor: none;
+.MainContent
+{
+  width: 100%;
+  height: 100%;
+  opacity: 0.9;
 }
 
+.WhiteBackGround
+{
+  background: white;
+}
 
+.MoreButton
+{
+  position: fixed;
+  width: fit-content;
+  height: fit-content;
+  margin: 10px auto; /* Will not center vertically and won't work in IE6/7. */
+  left: 0;
+  right: 0;
+  top:0;
+}
+
+.canvas-wrap { position:relative; width:100%; height:100% }
+
+.canvas-wrap canvas { position:absolute; top:0; left:0; z-index:0;width:100%;height:100%  }

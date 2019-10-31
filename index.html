@@ -13,51 +13,55 @@
 </head>
 <body>
 
+<div class="canvas-wrap">
+  <canvas id="nodes">
 
-<div id="wrap" class="MainContent">
+  </canvas>
+  <div id="wrap" class="MainContent">
 
-  <p class="flex">
-    <div class="__card">
-      <div class="__card-content">
-        <h1>Shubham Kumar</h1>
-        <p><small>a coder, a Programmer and a Developer</small></p>
-        <p class="_Schwifty_link_info"></p>
-        <p class="related">
-          <a class="_Schwifty_link" href ="https://github.com/UnresolvedCold"><img class="_Schwifty_img _Schwifty_BlackBack" src="./img/Github/GitHub-Mark-Light-64px.png"></a>
-          <a class="_Schwifty_link" href ="https://www.linkedin.com/in/shubham-kumar-436b92175/"><img class="_Schwifty_img _Schwifty_WhiteBack" src="./img/LinkedIn/linkedin.png"></a>
-          <a class="_Schwifty_link" href ="./ContactMe.html"><img class="_Schwifty_img _Schwifty_WhiteBack" src="./img/contact.png"></a>
-          <a class="_Schwifty_link" href ="https://www.facebook.com/profile.php?id=100020738573243"><img class="_Schwifty_img _Schwifty_WhiteBack" src="./img/Facebook/facebook_black.png"></a>
-          <a class="_Schwifty_link" href ="https://codeforces.com/profile/UnresolvedCold"><img class="_Schwifty_img _Schwifty_WhiteBack" src="./img/Codeforces/codeforces.png"></a>
-        </p>
-        
+    <p class="flex">
+      <div class="__card">
+        <div class="__card-content">
+          <h1>Shubham Kumar</h1>
+          <p><small>a coder, a Programmer and a Developer</small></p>
+          <p class="_Schwifty_link_info"></p>
+          <p class="related">
+            <a class="_Schwifty_link" href ="https://github.com/UnresolvedCold"><img class="_Schwifty_img _Schwifty_WhiteBack" src="./img/Github/GitHub-Mark-64px.png"></a>
+            <a class="_Schwifty_link" href ="https://www.linkedin.com/in/shubham-kumar-436b92175/"><img class="_Schwifty_img _Schwifty_WhiteBack" src="./img/LinkedIn/linkedin.png"></a>
+            <a class="_Schwifty_link" href ="./ContactMe.html"><img class="_Schwifty_img _Schwifty_WhiteBack" src="./img/contact.png"></a>
+            <a class="_Schwifty_link" href ="https://www.facebook.com/profile.php?id=100020738573243"><img class="_Schwifty_img _Schwifty_WhiteBack" src="./img/Facebook/facebook_black.png"></a>
+            <a class="_Schwifty_link" href ="https://codeforces.com/profile/UnresolvedCold"><img class="_Schwifty_img _Schwifty_WhiteBack" src="./img/Codeforces/codeforces.png"></a>
+          </p>
+          
+        </div>
       </div>
-    </div>
-  </p>
+    </p>
 
-  <p>
+    <p>
 
-    <div id="app" class="container">
+      <div id="app" class="container">
 
-      <a href ="./Projects.html">
-        <card data-image="./img/other/files.jpg">
-          <h1 slot="header">Projects</h1>
-          <p slot="content">Here is a short list of projects I'm engaged in.</p>
-        </card>
-      </a>
-      <a href ="./AboutMe.html">
-          <card data-image="./img/other/game.jpg">
-            <h1 slot="header">About Me</h1>
-            <p slot="content">Wanna know more about who I am?</p>
+        <a href ="./Projects.html">
+          <card data-image="./img/other/files.jpg">
+            <h1 slot="header">Projects</h1>
+            <p slot="content">Here is a short list of projects I'm engaged in.</p>
           </card>
-      </a>
-      <a href ="https://unresolvedcold.wordpress.com/">
-          <card data-image="./img/other/kole.jpg">
-            <h1 slot="header">Blog</h1>
-            <p slot="content">Mostly technical stuffs and how I manage my projects.</p>
-          </card>
-      </a>
-  </p>
+        </a>
+        <a href ="./AboutMe.html">
+            <card data-image="./img/other/game.jpg">
+              <h1 slot="header">About Me</h1>
+              <p slot="content">Wanna know more about who I am?</p>
+            </card>
+        </a>
+        <a href ="https://unresolvedcold.wordpress.com/">
+            <card data-image="./img/other/kole.jpg">
+              <h1 slot="header">Blog</h1>
+              <p slot="content">Mostly technical stuffs and my journey.</p>
+            </card>
+        </a>
+    </p>
 
+  </div>
 </div>
 
   
@@ -65,6 +69,8 @@
   <script  src="./js/3dHoverPlaneEffect.js"></script>
   <script  src="./js/SchwiftyLinkUpdate.js"></script>
   <script  src="./js/CursorAnim.js"></script>
+  <script src="lib/nodes.js"></script>
+  <script src="./js/Defaults.js"></script>
   <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.0.1/vue.min.js'></script>
   <script  src="./js/Parallax.js"></script>
   

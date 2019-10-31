@@ -57,8 +57,9 @@ Vue.component('card', {
 
   methods: {
     handleMouseMove(e) {
-      this.mouseX = e.pageX - this.$refs.card.offsetLeft - this.width / 2;
-      this.mouseY = e.pageY - this.$refs.card.offsetTop - this.height / 2;
+      //comment this to stop mouse rotaion
+      //this.mouseX = e.pageX - this.$refs.card.offsetLeft - this.width / 2;
+      //this.mouseY = e.pageY - this.$refs.card.offsetTop - this.height / 2;
     },
     handleMouseEnter() {
       clearTimeout(this.mouseLeaveDelay);

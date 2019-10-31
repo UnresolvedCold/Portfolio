@@ -1,3 +1,16 @@
+.MainContent,
+img,
+p,
+h1,
+H1,
+div,
+span,
+card,
+a,
+a:hover {
+    cursor: none;
+}
+
 #wrap {
   }
   

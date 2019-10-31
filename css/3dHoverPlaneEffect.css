@@ -8,8 +8,8 @@
   -webkit-transform: translateZ(0);
           transform: translateZ(0);
   padding: 30px;
-  background: rgb(250, 250, 250);
-  border-radius: 5px;
+  background: rgb(230, 230, 230);
+  border-radius: 15px;
   width: 400px;
   height: 200px;
   margin: auto;
@@ -55,7 +55,7 @@
   font-style: italic;
 }
 .__card a {
-  color: #69c6b8;
+  color:none;
   pointer-events: auto;
 }
 
