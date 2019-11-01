@@ -15,7 +15,7 @@ html, body, .perspective {
 }
 
 .perspective {
-	background: #aaa;
+	background: rgb(98, 98, 98);
 	position: relative;
 }
 
@@ -123,12 +123,24 @@ html, body, .perspective {
 	bottom: 25%;
 }
 
+.navbar-brand
+{
+	font-size: 36px;
+}
+
+.navbar-nav-li
+{
+	font-size: 36px;
+}
+
+
 .outer-nav a {
 	display: inline-block;
 	white-space: nowrap;
+	font-size: 100%;
 	font-weight: 300;
 	margin: 0 0 30px 0;
-	color: #fff;
+	color: rgb(224, 224, 224);
 	-webkit-transition: color 0.3s;
 	transition: color 0.3s;
 	-webkit-transform-style: preserve-3d;
@@ -136,7 +148,7 @@ html, body, .perspective {
 }
 
 .outer-nav a:hover {
-	color: #0073ff;
+	color: #ffffff;
 }
 
 .outer-nav.vertical a {
@@ -175,7 +187,7 @@ html, body, .perspective {
 
 /* Effect airbnb */
 .effect-airbnb {
-	background: #b8b6b4;
+	background: #4b4b4b;
 }
 
 .effect-airbnb .container {
@@ -530,7 +542,7 @@ html, body, .perspective {
 
 /* Effect Lay Down */
 .effect-laydown {
-	background: #b8b6b4;
+	background: #4b4b4b;
 }
 
 .effect-laydown .container {

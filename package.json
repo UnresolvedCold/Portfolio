@@ -1,0 +1,29 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "This is my portfolio website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/UnresolvedCold/Portfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "js",
+    "css",
+    "html",
+    "node"
+  ],
+  "author": "Shubham Kumar",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/UnresolvedCold/Portfolio/issues"
+  },
+  "homepage": "https://github.com/UnresolvedCold/Portfolio#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}

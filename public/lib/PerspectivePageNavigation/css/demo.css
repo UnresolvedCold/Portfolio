@@ -23,12 +23,12 @@ body {
 
 a {
 	text-decoration: none;
-	color: #ed8151;
+	color: #0044ff;
 	outline: none;
 }
 
 a:hover, a:focus {
-	color: #e86a32;
+	color: #00bd10;
 	outline: none;
 }
 
@@ -178,7 +178,7 @@ button {
 
 button:hover,
 button:active {
-	background: #ff0000;
+	background: #ff00ff;
 }
 
 .related {
