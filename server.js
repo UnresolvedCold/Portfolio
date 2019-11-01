@@ -28,9 +28,3 @@ app.post('/email',(req,res)=>
         else{res.json({message:'Email Sent'})}
     });
 });
-
-
-
-app.get('/',(req,res)=>{
-
-});
