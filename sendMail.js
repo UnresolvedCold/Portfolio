@@ -1,5 +1,4 @@
 const nodemailer = require('nodemailer');
-var CONFIG = require('./config.json');
 
 var maillist = [
     'unresolved.shubham@gmail.com',
