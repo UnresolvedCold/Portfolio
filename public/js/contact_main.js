@@ -11,7 +11,8 @@
     var message = $('.validate-input textarea[name="message"]');
 
 
-    $('.validate-form').on('submit',function(){
+    $('.validate-form').on('submit',function(e){
+       
         var check = true;
 
         if($(name).val().trim() == ''){
@@ -35,7 +36,10 @@
             check=false;
         }
 
-        return check;
+        if(check === true)
+        POST();
+
+        return false;
     });
 
 
@@ -53,10 +57,25 @@
 
     function hideValidate(input) {
         var thisAlert = $(input).parent();
-
         $(thisAlert).removeClass('alert-validate');
     }
     
+
+    function POST()
+    {
+        const _name= $(name).val().trim();
+        const _subject = $(subject).val().trim();
+        const _email = $(email).val().trim();
+        const _message = $(message).val().trim();
+
+        const data = {_name,_subject,_email,_message};    
+        $.post('/email',data,function()
+        {
+           // $(".messageSentDialogue");
+            //dialogue stating message sent
+        });
+    }
     
 
 })(jQuery);
+

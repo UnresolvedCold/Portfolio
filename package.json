@@ -24,6 +24,8 @@
   },
   "homepage": "https://github.com/UnresolvedCold/Portfolio#readme",
   "dependencies": {
-    "express": "^4.17.1"
+    "express": "^4.17.1",
+    "nodemailer": "^6.3.1",
+    "nodemailer-mailgun-transport": "^1.4.0"
   }
 }

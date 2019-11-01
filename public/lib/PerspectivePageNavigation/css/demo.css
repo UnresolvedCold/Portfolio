@@ -28,7 +28,7 @@ a {
 }
 
 a:hover, a:focus {
-	color: #00bd10;
+	color: #444444;
 	outline: none;
 }
 
@@ -178,7 +178,7 @@ button {
 
 button:hover,
 button:active {
-	background: #ff00ff;
+	background: #626262;
 }
 
 .related {
