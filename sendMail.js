@@ -10,8 +10,8 @@ var maillist = [
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-            user: CONFIG.PortfolioEmail,
-            pass: CONFIG.AppPassword
+            user: 'cold.schwifty@gmail.com',
+            pass: 'imkvxtxwymfbjbqk'
         },
         tls: {
             // do not fail on invalid certs
