@@ -26,6 +26,6 @@ Custom Mail Service - [Migadu](https://www.migadu.com)<br/>
 1. In './public/js/Projects.js' replace url (line 3) with the firebase cloud url of your database. Get the request in JSON format from your database. For more information on how I receive database for my portfolio [view this repository](https://github.com/UnresolvedCold/Portfolio-DatabaseRetrival.git)
 
 * For any queries, you can open a comment here or send me a personal email through my [Portfolio](http://www.schwiftycold.gq).
-
+* I've used heeroku for uploading the website, you can use aws or google cloud as per your preference.
 
   
