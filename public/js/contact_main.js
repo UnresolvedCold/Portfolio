@@ -59,6 +59,12 @@
         var thisAlert = $(input).parent();
         $(thisAlert).removeClass('alert-validate');
     }
+
+    $("button.ok_cool").click(function()
+    {
+        $("#dialogbox").addClass("hidden");
+
+    });
     
 
     function POST()
@@ -68,12 +74,35 @@
         const _email = $(email).val().trim();
         const _message = $(message).val().trim();
 
-        const data = {_name,_subject,_email,_message};    
-        $.post('/email',data,function()
+        const data = {_name,_subject,_email,_message}; 
+        const options=
         {
-           // $(".messageSentDialogue");
-            //dialogue stating message sent
-        });
+            method:'POST',
+            headers:{
+                'Content-Type':'application/json'
+            },
+            body: JSON.stringify(data)
+        };
+        
+        fetch('/email',options)
+        .then((resp)=>resp.json())
+        .then(function(data) 
+        {
+            console.log(data.status);
+            if(status=='success')
+            {
+                //show dialog
+                $("p.MailStatus").html("Email has been sent<br/>successfully");
+                $("#dialogbox").removeClass("hidden");
+            }
+            else
+            {
+                $("p.MailStatus").html("Internal Error!<br/>Try again later.");
+                $("#dialogbox").removeClass("hidden");
+            }
+
+        })
+            
     }
     
 

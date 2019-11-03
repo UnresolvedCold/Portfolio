@@ -444,3 +444,46 @@ textarea.input1 + .shadow-input1 {
   font-size: 16px;
   font-weight: bold;
 }
+
+#dialogbox
+{
+  background: #f3f3f3;
+  position: fixed;
+  width:400px;
+  height: 225px;
+  margin: auto;
+  right:0;
+  left:0;
+  top:0;
+  bottom:0;
+  z-index: 500;
+  padding: 20px;
+  color: white;
+  overflow: hidden;
+  border-radius: 15px;
+  -moz-box-shadow: 0 0 10px rgb(148, 148, 148);
+  -webkit-box-shadow: 0 0 10px,rgb(148, 148, 148);
+  box-shadow: 0 0 10px rgb(148, 148, 148);
+}
+#dialogbox p
+{
+  color: #57b846;
+  font-size: 32px;;
+}
+
+#dialogbox button,
+#dialogbox p
+{
+  margin: 10px;
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.hidden
+{
+  height:0px;
+  overflow: hidden;
+  opacity: 0;
+  visibility: hidden;
+}

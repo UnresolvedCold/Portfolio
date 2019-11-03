@@ -17,7 +17,6 @@
 <!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
 <!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/contact_main.css">
 <!--===============================================================================================-->
 
@@ -25,8 +24,58 @@
 <link rel="stylesheet" type="text/css" href="lib/PerspectivePageNavigation/css/demo.css">
 <link rel="stylesheet" type="text/css" href="lib/PerspectivePageNavigation/css/normalize.css">
 <link rel="stylesheet" type="text/css" href="css/Defaults.css">
+<link rel="stylesheet" type="text/css" href="css/Projects.css">
+
 
 <script src="lib/PerspectivePageNavigation/js/modernizr.custom.25376.js"></script>
+<script src="lib/jquery.js"></script>
+
+<script>
+	$( document ).ready(function() {
+
+	var url = "https://us-central1-portfolio-afa01.cloudfunctions.net/getProjectsList";
+	$.get(url)
+	.then(successCall,errorCall);
+	
+	function successCall(response)
+	{
+		MakeProjectHtml(response);
+	}
+
+	function errorCall(error)
+	{
+
+	}
+	});
+
+
+	function MakeProjectHtml(data)
+	{
+		var container = document.getElementById("projectlist");
+		var _ = JSON.parse(data);
+		for(var i=0;i<_.length;i++)
+		var {name, img, start,end, comment,href} = _[i];
+		
+		var html = 
+		`
+			<div class="project">
+				<img src="${img}">
+				<div style="margin: 10px; width:100%; height:100%;">
+					<H1>${name}</H1>
+					<p>${start}-${end}</p>
+					
+					<p>${comment}</p>
+					
+				</div>
+				<a style="margin:10px;" href="${href}">Know More</a>
+	
+			</div>
+		`;
+
+		$("#projectlist").append(html);
+	}
+							
+</script>
 
 </head>
 <body>
@@ -44,6 +93,18 @@
 			<div class="wrapper" style="width:100%;">
 				
 				<p><button id="showMenu" class="MoreButton">More</button></p>
+
+				<div class="contact1">
+						<div class="container-contact1">
+							
+								<div id="projectlist">
+
+								</div>
+
+						</div>
+				</div>
+
+			
 
 			</div>
 		</div>
@@ -67,17 +128,6 @@
 		})
 	</script>
 
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'UA-23581568-13');
-</script>
-
-<!--===============================================================================================-->
 <script src="lib/PerspectivePageNavigation/js/classie.js"></script>
 <script src="lib/PerspectivePageNavigation/js/menu.js"></script>	
 <script src="js/contact_main.js"></script>

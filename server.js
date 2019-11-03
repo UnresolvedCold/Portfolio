@@ -23,8 +23,8 @@ app.post('/email',(req,res)=>
     {
         if(err)
         {
-            res.status(500).json({message:"Internal Error"});
+            res.json({status:"Error"});
         }
-        else{res.json({message:'Email Sent'})}
+        else{res.json({status:'success'})}
     });
 });

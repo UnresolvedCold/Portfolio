@@ -1,0 +1,21 @@
+._about_
+{    overflow: hidden;
+    text-align: justify;
+    text-justify: inter-word;
+    padding:10px;
+    margin: 5px;
+    
+}
+._about_ p
+{
+    font-size: 20px;
+    color: black;  
+    display: inline;
+    text-align: justify;
+    text-justify: inter-word;
+}
+.about-body
+{
+    margin:auto;
+    float :left;
+}
