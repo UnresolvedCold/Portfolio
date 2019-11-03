@@ -19,25 +19,27 @@ $( document ).ready(function() {
 	function MakeProjectHtml(data)
 	{
 		var _ = JSON.parse(data);
-		for(var i=0;i<_.length;i++)
-		var {name, img, start,end, comment,href} = _[i];
+		for(var i=_.length-1;i>=0;i--)
+		{
+			var {name, img, start,end, comment,href} = _[i];
+			
+			var html = 
+			`
+				<div class="project">
+					<img src="${img}">
+					<div style="margin: 10px; width:100%; height:100%;">
+						<H1>${name}</H1>
+						<p>${start}-${end}</p>
+						
+						<p>${comment}</p>
+						
+					</div>
+					<a style="margin:10px;" href="${href}">Know More</a>
 		
-		var html = 
-		`
-			<div class="project">
-				<img src="${img}">
-				<div style="margin: 10px; width:100%; height:100%;">
-					<H1>${name}</H1>
-					<p>${start}-${end}</p>
-					
-					<p>${comment}</p>
-					
 				</div>
-				<a style="margin:10px;" href="${href}">Know More</a>
-	
-			</div>
-		`;
+			`;
 
-		$("#projectlist").append(html);
+			$("#projectlist").append(html);
+		}
 	}
 	
