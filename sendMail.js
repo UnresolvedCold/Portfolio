@@ -1,17 +1,16 @@
 const nodemailer = require('nodemailer');
 
 var maillist = [
-   // 'unresolved.shubham@gmail.com',
-    //'coldboy1998@gmail.com',
-    //'f20170712@goa.bits-pilani.ac.in',
-    'daniv36963@imail8.net'
+    'email1@gmail.com',
+    'email2@gmail.com',
+    'email3@gmail.com'
   ];
 
 var transporter = nodemailer.createTransport({
     service: 'gmail',
     auth: {
-            user: 'cold.schwifty@gmail.com',
-            pass: 'imkvxtxwymfbjbqk'
+            user: '***@gmail.com',
+            pass: '***apppassword***'
         },
         tls: {
             // do not fail on invalid certs
