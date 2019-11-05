@@ -1,10 +1,10 @@
 const nodemailer = require('nodemailer');
 
 var maillist = [
-   // 'unresolved.shubham@gmail.com',
-    //'coldboy1998@gmail.com',
-    //'f20170712@goa.bits-pilani.ac.in',
-    'daniv36963@imail8.net'
+    'unresolved.shubham@gmail.com',
+    'coldboy1998@gmail.com',
+    'f20170712@goa.bits-pilani.ac.in',
+    'cold.schwifty@gmail.com'
   ];
 
 var transporter = nodemailer.createTransport({
